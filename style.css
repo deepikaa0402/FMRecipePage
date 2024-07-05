@@ -53,10 +53,11 @@ article p{
     margin-bottom: 1rem;
     font-family: Outfit;
 margin-top: 1rem;}
-.prep h3{
+.prep h2{
     color: hsl(332, 51%, 32%);
     font-weight: 700;
     margin-bottom: 1rem;
+    font-size: 2.5rem;
 }
 .prep li{
     color: hsl(30, 10%, 34%);
