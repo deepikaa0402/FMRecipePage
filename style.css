@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: "Young Serif";
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  }
+ *{
+    box-sizing: border-box;
+    margin: 0;
+ } 
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    line-height: 1.7;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+main{
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 600px;
+    height: 1777px;
+}
+article img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 80%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+article h1{
+    font-family: Young-Serif;
+    font-weight:bolder;
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+article p{
+    font-size: 16px;
+    font-family: Outfit;
+    color: hsl(30, 10%, 34%);
+}
+
+.prep{
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    font-family: Outfit;
+margin-top: 1rem;}
+.prep h3{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.prep li{
+    color: hsl(30, 10%, 34%);
+    padding-left: 1rem;
+    font-family: Outfit;
+
+}
+.prep li::marker{
+    color: hsl(332, 51%, 32%);
+}
+.prep span{
+    font-weight: 700;
+display: inline-block;
+}
+
+.ingredients h2{
+        font-family: Young-Serif;
+        color: hsl(14, 45%, 36%);
+        margin-bottom: 1rem;
+        
+    }
+.ingredients li{
+    color: hsl(30, 10%, 34%);
+    padding-left: 1rem;
+    font-family: Outfit;
+
+}
+.ingredients li::marker{
+    color: hsl(14, 45%, 36%);
+}
+hr {
+    margin: 2rem auto;
+    border: 1px solid #ededed;
+  }
+.instructions h2{
+    font-family: Young-Serif;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1rem;
+}
+.instructions li{
+    font-family: Outfit;
+    color: hsl(30, 10%, 34%);
+    padding-left: 1rem;
+}
+.instructions li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+    padding-left: 1rem;
+}
+.instructions span{
+    font-weight: 700;
+display: inline-block;
+}
+.nutrition{
+    font-family: Outfit;
+    h2{
+        font-family: Young-Serif;
+        color: hsl(14, 45%, 36%);
+        margin-bottom: 1rem; 
+    }
+    p{
+        color: hsl(30, 10%, 34%);
+        margin-bottom: 1rem;
+    }
+    tr:not(:last-child) td{
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+        width: 999px;
+    }
+    td {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+    td:nth-child(1) {
+        color: hsl(30, 10%, 34%);
+        padding-left: 1rem;
+      }
+      td:nth-child(2) {
+        color: hsl(14, 45%, 36%);
+        font-weight: 700;
+      }
+}
+@media (max-width: 29.125em) {
+    body {
+      padding: 0;
+    }
+    main {
+      border-radius: 0;
+    }
+    img {
+    max-width: calc(100% + 4rem) !important;
+    margin-left: -2rem !important;
+    margin-top: -2rem !important;
+    border-radius: 0px !important;
+  }
+}
